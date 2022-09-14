@@ -89,22 +89,22 @@
                                     </div>
                                      <div class="row">
                                         <div class="col-md-12 form-group">
-                                            <label class="control-label d-block">Doctor available days <span
+                                            <label class="control-label d-block">Permisos <span
                                                     class="text-danger">*</span></label>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
                                                     value="1" name="sun" >
-                                                <label class="form-check-label" for="inlineCheckbox1">Sun</label>
+                                                <label class="form-check-label" for="inlineCheckbox1">Administración</label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
                                                     value="1" name="mon" >
-                                                <label class="form-check-label" for="inlineCheckbox2">Mon</label>
+                                                <label class="form-check-label" for="inlineCheckbox2">Acceso a diseños de mezcla</label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
                                                     value="1" name="tue" >
-                                                <label class="form-check-label" for="inlineCheckbox3">Tue</label>
+                                                <label class="form-check-label" for="inlineCheckbox3">Acceso a calibración y ajustes</label>
                                             </div>
                                         </div>
                                     </div>
@@ -113,7 +113,7 @@
                             <div class="row mt-4">
                                 <div class="col-md-12">
                                     <button type="submit" class="btn btn-primary">
-                                        Add New Doctor
+                                        Create user
                                     </button>
                                 </div>
                             </div>
