@@ -12,7 +12,7 @@
                             Administración
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="administracionDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><routerLink class="dropdown-item" to="/newuser">Crear usuario </routerLink></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -23,10 +23,10 @@
                             Fórmulas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="formulasDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><routerLink class="dropdown-item" to="/newform">Crear Fórmula</routerLink></li>
+                            <li><a class="dropdown-item" href="#">Editar Fórmula</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Borrar Fórmula</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown" >

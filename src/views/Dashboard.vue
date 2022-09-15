@@ -1,6 +1,17 @@
 <template>
     <Navbar />
-    <div class="container text-center mt-4">
+    <div class="container text-center mt-2">
+        <div class="col-12 mb-4">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Lista de Fórmulas</option>
+                    <option value="1">Fórmula 1</option>
+                    <option value="2">Fórmula 2</option>
+                    <option value="3">Fórmula 3</option>
+                </select>
+                <label for="floatingSelect">Seleccione la receta</label>
+            </div>
+        </div>
         <div class="row">
             <div class="col-4 px-1">
                 <h3 class="text-center">CEMENTO</h3>
@@ -70,20 +81,21 @@
                 <h4>VOLUMEN TOTAL: {{totalAdditives + totalWaters}} (LTS)</h4>        
             </div>
         </div>
-        <div class="row">
-            <div class="col-4"></div>
-        </div>
     </div>
+    <Controls />
 </template>
 
 <script>
 
 import {ref, computed} from 'vue'
 import Navbar from '../components/Navbar.vue'
+import Controls from '../components/Controls.vue'
+
 
 export default {
     components: {
-        Navbar
+        Navbar,
+        Controls
     },
     setup() {
             const cements = ref([
