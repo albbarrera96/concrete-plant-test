@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-7">
                     <p>Remisión:...</p>
-                    <p>Receta:...</p>
-                    <p>Descripción:...</p>
+                    <p>Receta: {{formulaName}}</p>
+                    <p>Descripción: {{formulaDescription}}</p>
                 </div>
                 <div class="col-5">
-                    Centímetros Cúbicos: <h4>0.00</h4>             
+                    Métros Cúbicos: <h4>0.00</h4>             
                 </div>    
             </div>
             <div class="row">
@@ -38,7 +38,11 @@
 
 <script>
 export default {
+    props: {
+        formulaName: String,
+        formulaDescription: String
 
+    }
 }
 </script>
 

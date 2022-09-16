@@ -3,11 +3,8 @@
     <div class="container text-center mt-2">
         <div class="col-12 mb-4">
             <div class="form-floating">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Lista de Fórmulas</option>
-                    <option value="1">Fórmula 1</option>
-                    <option value="2">Fórmula 2</option>
-                    <option value="3">Fórmula 3</option>
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" v-model="currentFormula">
+                    <option v-for="formula in Formulas" :key="formula.id" :value="formula">{{formula.name}} </option>
                 </select>
                 <label for="floatingSelect">Seleccione la receta</label>
             </div>
@@ -82,7 +79,10 @@
             </div>
         </div>
     </div>
-    <Controls />
+    <Controls 
+        :formulaName=currentFormula.name
+        :formulaDescription=currentFormula.description
+    />
 </template>
 
 <script>
@@ -90,14 +90,17 @@
 import {ref, computed} from 'vue'
 import Navbar from '../components/Navbar.vue'
 import Controls from '../components/Controls.vue'
+import Formulas from '../assets/data/formulas.json'
 
 
 export default {
     components: {
         Navbar,
-        Controls
+        Controls,
+        Formulas
     },
     setup() {
+            var currentFormula = ref([]);
             const cements = ref([
                 {'name': 'Cemento 1', 'content': 75},
                 {'name': 'Cemento 2', 'content': 50},
@@ -138,7 +141,9 @@ export default {
             totalWaters,
             additives,
             totalAdditives,
-            trucks
+            trucks,
+            Formulas,
+            currentFormula
         }
 
     },

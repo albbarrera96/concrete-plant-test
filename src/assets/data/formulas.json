@@ -1,0 +1,53 @@
+    [
+        {
+
+            "code":"0001",
+            "name":"Fórmula 1",
+            "description": "Fórmula de prueba",
+            "cement1": 5,
+            "cement2": 3,
+            "cement3": 1,
+            "aggregate1": 1,
+            "aggregate2": 2,
+            "aggregate3": 4,
+            "additive1": 2,
+            "additive2": 0,
+            "additive3": 0,
+            "water": 10
+
+        },
+        {
+
+            "code":"0002",
+            "name":"Fórmula 2",
+            "description": "Fórmula de prueba 2",
+            "cement1": 8,
+            "cement2": 2,
+            "cement3": 3,
+            "aggregate1": 1,
+            "aggregate2": 3,
+            "aggregate3": 5,
+            "additive1": 2,
+            "additive2": 0,
+            "additive3": 1,
+            "water": 12
+
+        },
+        {
+
+            "code":"0003",
+            "name":"Fórmula 3",
+            "description": "Fórmula de prueba 3",
+            "cement1": 6,
+            "cement2": 4,
+            "cement3": 0,
+            "aggregate1": 0,
+            "aggregate2": 3,
+            "aggregate3": 0,
+            "additive1": 0,
+            "additive2": 0,
+            "additive3": 6,
+            "water": 19
+        }
+]
+
