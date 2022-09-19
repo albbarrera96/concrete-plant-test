@@ -1,16 +1,25 @@
 <template>
     <Navbar />
     <div class="container text-center mt-2">
-        <div class="col-12 mb-4">
-            <div class="form-floating">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" v-model="currentFormula">
-                    <option v-for="formula in Formulas" :key="formula.id" :value="formula">{{formula.name}} </option>
-                </select>
-                <label for="floatingSelect">Seleccione la receta</label>
+        <div class="row">
+            <div class="col-lg-8 col-sm-6 mb-4">
+                <div class="form-floating">
+                    <select class="form-select form-select-md" id="floatingSelect" aria-label="Floating label select example" v-model="currentFormula">
+                        <option v-for="formula in Formulas" :key="formula.id" :value="formula">{{formula.name}} </option>
+                    </select>
+                    <label for="floatingSelect">Seleccione la receta</label>
+                </div>
+            </div>    
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="input-group input-group-md mb-3">
+                    <span class="input-group-text">Cantidad</span>
+                    <input type="number" class="form-control" v-model="cubicMeters">
+                    <span class="input-group-text">m3</span>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-4 px-1">
+            <div class="col-lg-4 col-sm-6 px-1">
                 <h3 class="text-center">CEMENTO</h3>
                 <div class="row">
                     <div class="col-4" v-for="cement in cements" :key="cement.id">
@@ -34,7 +43,7 @@
                     </div>
                 </div>    
             </div>   
-            <div class="col-4 px-2">
+            <div class="col-lg-4 col-sm-6 px-2">
                 <h3 class="text-center">AGREGADOS</h3>
                 <div class="row">
                     <div class="col-4 mt-4" v-for="aggregate in aggregates" :key="aggregate.id">
@@ -82,6 +91,10 @@
     <Controls 
         :formulaName=currentFormula.name
         :formulaDescription=currentFormula.description
+        :cubicMeters="cubicMeters"
+        :cementList1="Number(currentFormula.cement1) * cubicMeters"
+        :cementList2="Number(currentFormula.cement2) * cubicMeters"
+        :cementList3="Number(currentFormula.cement3) * cubicMeters"
     />
 </template>
 
@@ -101,6 +114,7 @@ export default {
     },
     setup() {
             var currentFormula = ref([]);
+            var cubicMeters = ref([]);
             const cements = ref([
                 {'name': 'Cemento 1', 'content': 75},
                 {'name': 'Cemento 2', 'content': 50},
@@ -143,7 +157,8 @@ export default {
             totalAdditives,
             trucks,
             Formulas,
-            currentFormula
+            currentFormula,
+            cubicMeters
         }
 
     },

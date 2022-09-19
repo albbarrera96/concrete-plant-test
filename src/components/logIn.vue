@@ -29,7 +29,7 @@
                                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
                                     <div class="d-grid gap-2">
-                                        <router-link to="/admin" type="submit" class="btn btn-dark" @click = login()>Submit</router-link>
+                                        <router-link to="/dashboard" type="submit" class="btn btn-dark" @click = login()>Submit</router-link>
                                     </div>
                                 </form>
                             </div>
