@@ -95,6 +95,13 @@
         :cementList1="Number(currentFormula.cement1) * cubicMeters"
         :cementList2="Number(currentFormula.cement2) * cubicMeters"
         :cementList3="Number(currentFormula.cement3) * cubicMeters"
+        :aggregateList1="Number(currentFormula.aggregate1) * cubicMeters"
+        :aggregateList2="Number(currentFormula.aggregate2) * cubicMeters"
+        :aggregateList3="Number(currentFormula.aggregate3) * cubicMeters"
+        :additiveList1="Number(currentFormula.additive1) * cubicMeters"
+        :additiveList2="Number(currentFormula.additive2) * cubicMeters"
+        :additiveList3="Number(currentFormula.additive3) * cubicMeters"
+        :waterAmount="Number(currentFormula.water) * cubicMeters"
     />
 </template>
 

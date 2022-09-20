@@ -3,7 +3,7 @@
     
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="card mt-4 mb-4">
+                    <div class="card mt-4 mb-4 shadow-sm">
                         <div class="card-body">
                             <h2>Crear fórmula</h2>
                             <form id="addtime" action=" https://doctorly.themesbrand.website/doctor " method="post" enctype="multipart/form-data">
