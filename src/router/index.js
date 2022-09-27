@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/newform',
       name: 'NewForm',
       component: ()=>import('../components/NewForm.vue')
+    },
+    {
+      path: '/editform',
+      name: 'EditForm',
+      component: () => import('../components/EditForm.vue')
     }
   ]
 })

@@ -8,6 +8,9 @@ import HelloWorld from './components/HelloWorld.vue'
   <RouterView />
 </template>
 
-<style scoped>
+<style >
+  #app{
+    background: rgb(241, 241, 241);
+  }
 
 </style>

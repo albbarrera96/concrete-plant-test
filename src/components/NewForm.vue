@@ -1,6 +1,5 @@
 <template>
     <div class="container-lg">
-    
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card mt-4 mb-4 shadow-sm">
